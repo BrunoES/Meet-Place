@@ -20,7 +20,7 @@ Class Grupo{
   }
   
    public function buscaGrupo($nome){
-    $query = mysql_query("SELECT * FROM u209298020_pi.grupos where nome = '$nome'");
+    $query = mysql_query("SELECT * FROM u209298020_pi.grupos where nome='$nome'");
    while($linha = mysql_fetch_assoc($query)){
    $idgrupo = $linha['idgrupos'];
     }

@@ -36,7 +36,8 @@ $query = mysql_query("SELECT * FROM meetplace.grupos where nome='$grupo'") or di
  */
 // Inseri o ID do usuario na tabela de membros do grupo criado 
 $ponto = new Ponto();
-$ponto->marcaPonto($x, $y, $idusuario, $idgrupo, $nome, $endereco);
+$ponto->setPonto($nome, $idusuario, $idgrupo, $endereco, $x, $y);
+$ponto->marcaPonto();
 //$query = mysql_query("INSERT INTO meetplace.pontos (x,y,idusuarios,idgrupos,nome,endereco) VALUES ('$x','$y','$idusuario','$idgrupo','$nome','$endereco')") or die(mysql_error());
 ?>
 <script language="javascript">

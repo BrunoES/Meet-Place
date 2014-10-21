@@ -190,6 +190,7 @@ if($total > 0){
  $idgrupo = $linha['idgrupo']; 
  
  $grupo = $grupoBusca->retornaNomeGrupo($idgrupo);
+ //$idgrupo = $grupoBusca->buscaGrupo($grupo);
  /*
  $grupos = mysql_query("SELECT nome FROM meetplace.grupos where idgrupos='$idgrupo';") or die(mysql_error());
 
