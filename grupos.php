@@ -139,7 +139,7 @@ if($total > 0){
  while($linha = mysql_fetch_assoc($query)){
  //$idusuario = $linha['idusuarios'];
  $idgrupo = $linha['idgrupos'];
- $grupo = $linha['nome']; 
+ $grupo = $grupo->retornaNomeGrupo($idgrupo);
 ?>
  	<option value="<?=$idgrupo?>"><?=$grupo?></option>
  <?php

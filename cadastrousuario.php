@@ -6,9 +6,9 @@
   <title>Meet Place</title>
   <script language="javascript" type="text/javascript">
     function valida(){
-    if(document.dados.usuario.value=="" || document.dados.usuario.value.length < 8)
+    if(document.dados.usuario.value=="" || document.dados.usuario.value.length < 6)
     {
-    alert( "Preencha campo Usuario ID corretamente!" );
+    alert( "O Campo usuário não pode ser menor que 6 caracteres." );
     document.dados.usuario.focus();
     return false;
     }
@@ -18,13 +18,13 @@
     document.dados.email.focus();
     return false;
     }
-    if (document.dados.senha1.value=="" || document.dados.senha1.value1.length < 6) {
-    alert("Preencha a senha corretamente.");
+    if (document.dados.senha1.value=="" || document.dados.senha1.value.length < 6) {
+    alert("A Senha deve ter no mínimo 6 caracteres.");
     document.dados.senha1.focus();
     return false;
     }
-    if (document.dados.senha2.value=="" || document.dados.senha2.value1.length < 6) {
-    alert("Preencha a senha corretamente.");
+    if (document.dados.senha2.value=="" || document.dados.senha2.value.length < 6) {
+    alert("A Senha deve ter no mínimo 6 caracteres.");
     document.dados.senha2.focus();
     return false;
     }

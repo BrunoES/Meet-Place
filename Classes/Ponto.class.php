@@ -19,20 +19,20 @@ Class Ponto{
   }
   
   public function marcaPonto(){
-      $query = mysql_query("INSERT INTO u209298020_pi.pontos (x,y,idusuarios,idgrupos,nome,endereco) VALUES ('$this->_x','$this->_y','$this->_idusuario', '$this->_idgrupo','$this->_nome','$this->_endereco')") or die(mysql_error());
+      $query = mysql_query("INSERT INTO meetplace.pontos (x,y,idusuarios,idgrupos,nome,endereco) VALUES ('$this->_x','$this->_y','$this->_idusuario', '$this->_idgrupo','$this->_nome','$this->_endereco')") or die(mysql_error());
   }
   
   public function deletaPonto($idponto){
-	  $query = mysql_query("DELETE FROM u209298020_pi.pontos where idpontos='$idponto'") or die(mysql_error());
+	  $query = mysql_query("DELETE FROM meetplace.pontos where idpontos='$idponto'") or die(mysql_error());
   }
   
   public function retornaPontos($idgrupo){
-	$query = mysql_query("SELECT * FROM u209298020_pi.pontos where idgrupos = '$idgrupo'");  
+	$query = mysql_query("SELECT * FROM meetplace.pontos where idgrupos = '$idgrupo'");  
 	return $query;
   }
   
   public function retornaPontoPorCord($x,$y){
-	$query = mysql_query("SELECT * FROM u209298020_pi.pontos where x='$x' and y='$y'");  
+	$query = mysql_query("SELECT * FROM meetplace.pontos where x='$x' and y='$y'");  
 	while($linha = mysql_fetch_assoc($query)){
 	  $idponto = $linha['idpontos'];	
 	}

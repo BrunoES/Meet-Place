@@ -204,7 +204,7 @@ if($total > 0){
  }
  }
  ?>
-   <option>_______</option>
+   <option>Selecione um Grupo</option>
    </center>
   </select> 
   

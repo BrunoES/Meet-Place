@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL ^ E_DEPRECATED);
        include("conexao.php");
 	   require_once("Classes/Usuario.class.php");
 	   require_once("Classes/Grupo.class.php");
@@ -158,7 +159,7 @@ if($total > 0){
  }
  }
  ?>
-   <option>_______</option>
+   <option>Selecione um Grupo</option>
    </center>
 
   </select> 
@@ -168,7 +169,7 @@ if($total > 0){
          <div name="divpontos" id="divpontos">
         <select class="selectpicker" name="pontos" id="pontos">
 
-        <option>_____________</option>
+        <option>Selecione um Ponto</option>
     
         </select>
        </div>

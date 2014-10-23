@@ -8,7 +8,7 @@ Class EstadosUF{
   }
  
    public function retornaEstadosUF(){
-    $query = mysql_query("SELECT * FROM u209298020_pi.tb_estados");
+    $query = mysql_query("SELECT * FROM meetplace.tb_estados");
     return $query;
   } 
 }

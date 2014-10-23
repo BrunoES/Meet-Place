@@ -8,7 +8,7 @@ Class Cidades{
   }
  
    public function retornaCidadesUF($uf){
-    $query = mysql_query("SELECT * FROM u209298020_pi.tb_cidades where estado='$uf'");
+    $query = mysql_query("SELECT * FROM meetplace.tb_cidades where estado='$uf'");
     return $query;
   } 
 }
